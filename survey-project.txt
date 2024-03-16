@@ -1,0 +1,95 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+      <meta charset=UTF-8>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="styles.css" rel="stylesheet"/>
+      <h1 id="title">Survey Form</h1>
+    </head>
+    <main>
+      <p id="description">Please fill out the survey</p>
+      <form id="survey-form">
+        <section>
+        <label for="name-label" id="name-label">Enter Your Name: </label>
+        <label for="name"><input id="name" type="text" placeholder="Name" required /></label>
+        </section>
+        <section>
+        <label for="email-label" id="email-label">Enter Your Email: </label>
+        <label for="email"><input id="email" type="email" placeholder="Email" required /></label>
+        </section>
+        <section>
+        <label for="number-label" id="number-label">Enter age: </label>
+        <label for="number"><input id="number" type="number" min="1" max="120" placeholder="0" required /></label>
+        </section>
+        <section>
+        Male<input type="radio" value="1" name="radio1" checked/>
+        Female<input type="radio" value="2" name="radio1"/>
+        </section>
+        How did you hear about us: 
+        <select id="dropdown" class="dropdown">
+          <option>none</option>
+          <option>Family</option>
+          <option>A friend</option>
+          <option>Work</option>
+          <option>Social media</option>
+        </select>
+        <section>
+        Own a car<input type="checkbox" value="3" name="checkbox1" class="checkbox"/>
+        Own a house<input type="checkbox" value="4" name="checkbox2" class="checkbox"/>
+        </section>
+        <textarea placeholder="Extra info" class="textarea"></textarea>
+        <section>
+        <input id="submit" type="submit" value="Submit" />
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  text-align: center;
+  background-color: 000077;
+  color: white;
+  font-style: italic;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.dropdown {
+  margin-bottom: 30px;
+  background-color: lightblue;
+}
+
+.textarea {
+  margin-bottom: 10px; 
+  max-width: 100%;
+  max-height: 100px;
+  background-color: lightblue;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 30%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: lightblue;
+  border-color: white;
+  min-width: 100px;
+}
+
+input[type="text"], [type="email"], [type="number"]{
+  background-color: lightblue
+}
+
+** end of undefined **
+
